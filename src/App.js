@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import Contact from "./components/Contact/Contact";
 import Container from "./components/Container/Container";
 import Navbar from "./components/Navbar/Navbar";
-import Compile from "./components/Compiler/Compile";
 import Courses from "./components/Courses/Courses";
 function App() {
   const intro = useRef(null);
