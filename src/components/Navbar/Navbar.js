@@ -1,5 +1,4 @@
 import React from "react";
-// import { a } from 'react-router-dom'
 
 export default function Navbar({
   intro,
@@ -40,7 +39,7 @@ export default function Navbar({
               <li className="nav-item">
                 <a
                   className="nav-link text-light"
-                  onClick={() => scrollToSection(intro)}
+                  onClick={() => scrollToSection(speciality)}
                 >
                   Motivator
                 </a>

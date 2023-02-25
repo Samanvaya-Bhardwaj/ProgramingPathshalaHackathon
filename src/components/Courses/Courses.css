@@ -1,6 +1,7 @@
 .crd {
   display: flex;
   background-image: linear-gradient(rgb(181, 121, 121), rgb(226, 226, 100));
+  flex-wrap: wrap;
 }
 .img {
   height: 200px;

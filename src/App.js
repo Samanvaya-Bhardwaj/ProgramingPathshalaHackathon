@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Contact from "./components/Contact/Contact";
 import Container from "./components/Container/Container";
-import Courses from "./components/Courses/Courses";
 import Navbar from "./components/Navbar/Navbar";
 import Compile from "./components/Compiler/Compile";
+import Courses from "./components/Courses/Courses";
 function App() {
   const intro = useRef(null);
   const speciality = useRef(null);
@@ -24,10 +24,12 @@ function App() {
         courses={courses}
         scrollToSection={scrollToSection}
       />
-      <Container intro={intro} speciality={speciality} />
-      <Courses courses={courses} />
-      <Compile />
-      <Contact contact={contact} />
+      <br />
+      <div>
+        <Container intro={intro} speciality={speciality} />
+        <Courses courses={courses} />
+        <Contact contact={contact} />
+      </div>
     </>
   );
 }
