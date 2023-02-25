@@ -8,6 +8,7 @@ function App() {
   const intro = useRef(null);
   const speciality = useRef(null);
   const contact = useRef(null);
+  const courses = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -16,10 +17,16 @@ function App() {
   };
   return (
     <>
-      <Navbar />
-      <Container />
-      <Courses />
-      <Contact />
+      <Navbar
+        intro={intro}
+        speciality={speciality}
+        contact={contact}
+        courses={courses}
+        scrollToSection={scrollToSection}
+      />
+      <Container intro={intro} speciality={speciality} />
+      <Courses courses={courses} />
+      <Contact contact={contact} />
     </>
   );
 }

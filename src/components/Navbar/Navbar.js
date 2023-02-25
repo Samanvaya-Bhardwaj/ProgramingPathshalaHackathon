@@ -6,12 +6,13 @@ export default function Navbar({
   speciality,
   scrollToSection,
   contact,
+  courses,
 }) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light">
         <div className="container">
-          <a className="navbar-brand fw-bold fs-3" href="/">
+          <a className="navbar-brand fw-bold fs-3 text-light" href="/">
             Learn-Ed
           </a>
           <button
@@ -29,7 +30,7 @@ export default function Navbar({
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
-                  className="nav-link active"
+                  className="nav-link active text-light"
                   aria-current="page"
                   onClick={() => scrollToSection(intro)}
                 >
@@ -37,18 +38,24 @@ export default function Navbar({
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scrollToSection(intro)}>
+                <a
+                  className="nav-link text-light"
+                  onClick={() => scrollToSection(intro)}
+                >
                   Motivator
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a
+                  className="nav-link text-light"
+                  onClick={() => scrollToSection(courses)}
+                >
                   Learn
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link"
+                  className="nav-link text-light"
                   onClick={() => scrollToSection(contact)}
                 >
                   Contact
@@ -56,14 +63,14 @@ export default function Navbar({
               </li>
             </ul>
 
-            <div className="buttons">
-              <a href="/" className="btn btn-outline-dark mx-2">
+            {/* <div className="buttons">
+              <a href="/" className="btn  btn-outline-light mx-2">
                 Login
               </a>
-              <a href="/" className="btn btn-outline-dark mx-2">
+              <a href="/" className="btn btn-outline-light mx-2">
                 Register
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

@@ -1,3 +1,17 @@
-.video {
-  display: contents;
+.contact {
+  background-image: linear-gradient(
+    to right,
+    rgb(230, 243, 52),
+    rgb(232, 204, 138)
+  );
+  border-radius: 5%;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(77, 209, 33),
+    rgb(139, 243, 248)
+  );
+  border-radius: 5%;
 }
