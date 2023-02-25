@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Contact.css";
 const ContactForm = () => {
   const [formStatus, setFormStatus] = React.useState('Send')
   const onSubmit = (e) => {
