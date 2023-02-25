@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.lorem{
+    position: relative;
+    height: 400px;
+    width: 250px;
+    font-weight: 400;
+}
+.image{
+    position: relative;
+    width: 350px;
+}
