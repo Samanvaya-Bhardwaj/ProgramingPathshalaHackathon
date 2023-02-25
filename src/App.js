@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Contact from "./components/Contact/Contact";
 import Container from "./components/Container/Container";
+import Courses from "./components/Courses/Courses";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
@@ -15,14 +16,10 @@ function App() {
   };
   return (
     <>
-      <Navbar
-        intro={intro}
-        speciality={speciality}
-        contact={contact}
-        scrollToSection={scrollToSection}
-      />
-      <Container intro={intro} speciality={speciality} />
-      <Contact contact={contact} />
+      <Navbar />
+      <Container />
+      <Courses />
+      <Contact />
     </>
   );
 }
