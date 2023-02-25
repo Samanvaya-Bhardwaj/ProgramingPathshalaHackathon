@@ -1,16 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Header from "./components/Header/Header";
+import Container from "./components/Container/Container";
+import Navbar from "./components/Navbar/Navbar";
 
-import "./app.css";
-const App = () => {
+function App() {
   return (
     <>
-      <Container fluid>
-        <Header />
-      </Container>
+      <Navbar />
+      <Container />
     </>
   );
-};
+}
 
 export default App;
