@@ -1,66 +1,50 @@
-import React from "react";
-import { Card, Button } from "react-bootstrap";
-import "./Courses.css";
+import React from 'react'
+import "./Courses.css"
+import { Card, Button } from 'react-bootstrap'
 
 export default function Courses({ courses }) {
   return (
-    <div className="crd" ref={courses}>
-      <h1 className="text-light text-center my-5">Our Courses</h1>
-      <div className="d-flex align-item-center justify-content-around">
-        <div>
-          <Card className="my-5 mx-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
-        <div>
-          <Card className="my-5 mx-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
-        <div>
-          <Card className="my-5 mx-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
-
-        <div>
-          <Card className="my-5 mx-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
+    <>
+    <h1 className='text-center my-5'>Our Courses</h1>
+    <div className='crd d-flex align-item-center justify-content-around'>
+      <div>
+      <Card className='my-5 mx-5' style={{ width: '18rem' }}>
+      <Card.Img className="img" variant="top" src="/assets/java.jpeg" />
+      <Card.Body>
+        <Card.Title>Learn Java</Card.Title>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
       </div>
+      <div>
+      <Card className='my-5 mx-5' style={{ width: '18rem' }}>
+      <Card.Img className="img" variant="top" src="/assets/react.jpeg" />
+      <Card.Body>
+        <Card.Title>Learn React</Card.Title>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+      </div>
+      <div>
+      <Card className='my-5 mx-5' style={{ width: '18rem' }}>
+      <Card.Img className="img" variant="top" src="/assets/cpp.jpeg" />
+      <Card.Body>
+        <Card.Title>Learn C++</Card.Title>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+      </div>
+
+      <div>
+      <Card className='my-5 mx-5' style={{ width: '18rem' }}>
+      <Card.Img className="img" variant="top" src="/assets/js.jpeg" />
+      <Card.Body>
+        <Card.Title>Learn Java Script</Card.Title>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+      </div>
+      
     </div>
   );
 }
