@@ -1,11 +1,11 @@
 import React from "react";
 import "./Container.css";
 
-export default function Container() {
+export default function Container({ intro, speciality }) {
   return (
     <>
       <div className="her">
-        <div className="card text-bg-dark border-0">
+        <div className="card text-bg-dark border-0" ref={intro}>
           <img
             src="/assets/background.jpg"
             className="card-img"
@@ -17,7 +17,7 @@ export default function Container() {
           </div>
         </div>
 
-        <div className="hero ">
+        <div className="hero" ref={speciality}>
           <div className="box text-center ">
             <h1>Learn Anytime Anywhere</h1>
             <h3>Learn in Your Suitable Slots</h3>
