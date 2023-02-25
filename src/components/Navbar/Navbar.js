@@ -11,9 +11,7 @@ export default function Navbar({
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light">
         <div className="container">
-          <a className="navbar-brand fw-bold fs-3 text-light" href="/">
-            Learn-Ed
-          </a>
+          <a className="navbar-brand fw-bold fs-3 text-light">Learn-Ed</a>
           <button
             className="navbar-toggler"
             type="button"
