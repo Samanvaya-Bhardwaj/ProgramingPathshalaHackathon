@@ -1,7 +1,8 @@
 .hero {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items:center;
+  height: 600px;
   background-image: linear-gradient(pink, rgb(165, 216, 117));
 }
 .lorem {
@@ -13,4 +14,5 @@
 .image {
   position: relative;
   width: 350px;
+  border-radius: 40%;
 }

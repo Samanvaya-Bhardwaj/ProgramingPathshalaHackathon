@@ -23,10 +23,10 @@ export default function Container({ intro, speciality }) {
             <h3>Learn in Your Suitable Slots</h3>
           </div>
 
-          <div className="image mx-5 my-5">
+          <div className="image mx-5 my-5 ">
             <img
               src="/assets/Container.jpg"
-              className="card-img"
+              className="card-img rounded-circle" 
               alt="Background"
             />
           </div>
