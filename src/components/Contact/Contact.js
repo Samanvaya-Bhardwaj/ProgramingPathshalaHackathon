@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 import "./Contact.css";
-const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
+const ContactForm = ({ contact }) => {
+  const [formStatus, setFormStatus] = React.useState("Send");
   const onSubmit = (e) => {
-    e.preventDefault()
-    setFormStatus('Submitted')
-    const { name, email, message } = e.target.elements
+    e.preventDefault();
+    setFormStatus("Submitted");
+    const { name, email, message } = e.target.elements;
     let conFom = {
       name: name.value,
       email: email.value,
       message: message.value,
-    }
-    console.log(conFom)
-  }
+    };
+    console.log(conFom);
+  };
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 contact" ref={contact}>
       <h1 className="mb-3">Contact Us Now</h1>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
@@ -40,6 +40,6 @@ const ContactForm = () => {
         </button>
       </form>
     </div>
-  )
-}
-export default ContactForm
+  );
+};
+export default ContactForm;

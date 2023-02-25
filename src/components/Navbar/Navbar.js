@@ -1,7 +1,12 @@
 import React from "react";
 // import { a } from 'react-router-dom'
 
-export default function Navbar({ intro, speciality, scrollToSection }) {
+export default function Navbar({
+  intro,
+  speciality,
+  scrollToSection,
+  contact,
+}) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light">
@@ -42,7 +47,10 @@ export default function Navbar({ intro, speciality, scrollToSection }) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection(contact)}
+                >
                   Contact
                 </a>
               </li>

@@ -1,0 +1,8 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(230, 243, 52),
+    rgb(232, 204, 138)
+  );
+  border-radius: 5%;
+}

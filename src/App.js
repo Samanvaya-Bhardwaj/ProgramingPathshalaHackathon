@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   const intro = useRef(null);
   const speciality = useRef(null);
+  const contact = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -14,9 +15,14 @@ function App() {
   };
   return (
     <>
-      <Navbar />
-      <Container />
-      <Contact />
+      <Navbar
+        intro={intro}
+        speciality={speciality}
+        contact={contact}
+        scrollToSection={scrollToSection}
+      />
+      <Container intro={intro} speciality={speciality} />
+      <Contact contact={contact} />
     </>
   );
 }
