@@ -1,6 +1,7 @@
 import React from "react";
 import "./Courses.css";
 import { Card, Button } from "react-bootstrap";
+import Compile from "../Compiler/Compile";
 
 export default function Courses({ courses }) {
   return (
